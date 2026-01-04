@@ -1,2 +1,7 @@
-# t2d-blood-transcriptomics-biomarker-pipeline
-Reproducible R pipeline for blood transcriptomics biomarker discovery in Type 2 Diabetes, combining leakage-aware CV (limma), stability selection (Boruta + bootstrapped elastic-net), and external validation (GSE9006 → GSE15932) with interpretable gene-panel outputs.
+Project summary
+
+End-to-end biomarker discovery pipeline for T2D blood transcriptomics
+
+Train: GSE9006 (GPL96), Validate: GSE15932 (GPL570)
+
+Methods: limma within CV (anti-leakage), Boruta, bootstrapped elastic-net, external AUC + bootstrap CI + permutation test, calibration, batch correction PCA
